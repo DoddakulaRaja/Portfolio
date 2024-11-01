@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title> Raja Personal Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d32441e93a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!-----<img src="images/" class="logo">------>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i  class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            <div class="header-text">
+            <p>JAVA FULL STACK DEVELOPER</p>
+            <h1>Hello, I'm <span>RAJA</span><br> MCA STUDENT</h1>
+            </div>
+            </div>
+        </div>
+        <!-------------------About-------------->
+        <div id="about">
+            <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Innovative software engineer with a strong foundation in programming and problem-solving, proficient in multiple 
+                        programming languages and development tools. Experienced in Full Stack Development, Agile methodologies, and 
+                        software testing. Passionate about staying up-to-date with emerging technologies and collaborating with cross-functional 
+                        teams to deliver cutting-edge products </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">TECHNICAL SKILLS </p>
+                            <p class="tab-links" onclick="opentab('experience')">SOFT SKILLS</p>
+                            <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        </div>
+                        <div class="tab-contents active-tabs" id="skills">
+                            <ul>
+                                <li> <span>PROGRAMMING LANGUAGES</span><br> JAVA (Proficient), JavaScript (Proficient), C (Intermediate), C++ (Intermediate),  
+                                    Python (Intermediate).</li>
+                                <li> <span>WEB DEVELOPMENT</span><br> HTML, CSS, Bootstrap, React.js(Proficient), Angular.js (Intermediate), Node.js 
+                                    (Intermediate), Express.js (Intermediate).</li>
+                                <li> <span>TECHNOLOGY</span><br>Git, MySQL</li>
+                                <li> <span>Dev Oops / CLOUD COMPUTING</span><br>Amazon Web Services (AWS), GitHub Actions</li>
+                                <li> <span>OTHER SKILLS </span><br> Software Architecture, Object-Oriented Design, Testing and Debugging, Performance Tuning, 
+                                    Enterprise Integration, Complexity Analysis, Troubleshoot. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span></span><br>Communication<br><br>Problem Solving<br><br>Adaptability<br><br>Teamwork<br><br>Attention to Detail</li>
+                                <!---<li> <span>2019-2021</span><br>Desinint web/app interface</li>
+                                <li> <span>2016-2017</span><br>Desinint web/app interface</li>--->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>M C A </span><br> -   AKKINENI NAGESWARA RAO COLLEGE <br> CGPA –9.0 (2022-2024) </li>
+                                <li> <span>B .Sc</span><br>  -   VIKAS DEGREE COLLEGE <br> CGPA -7.84 (2019-2022) </li>
+                                <li> <span>M.P.C</span><br>  -   VIKAS JUNIOR COLLEGE <br>  CGPA -8.33 (2017-2019) </li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!------------------services------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design refers to the design of websites. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Learn about the key requirements, duties, responsibilities, and skills that should be in a UI UX designer job description. UI/UX designers are responsible for the design and implementation of all the experiences a user has when interacting with a digital tool, such as a website.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>A mobile app designer uses their design and programming language skills to create, manage, and maintain unique mobile applications that give its users a great experience. A great mobile app designer knows how to work with more than one operating system and is proficient in different programming languages.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------Portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">ACADEMIC PROJECT’S</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h1>ONLINE RESUME BUILDER  E-COMMERCE WEBSITE </h1>
+                        <p> Develop a web application that assists users in 
+                            creating professional resume with customizable templates.</p>
+                        <a href="https://github.com/DoddakulaRaja/Coding-Raja-Technologies-Internship/tree/main/Resume%20Generator"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h1>MUSIC PLAYER ANDROID APPLICATION </h1>
+                        <p> Design and develop a music player application for users to listen to 
+                            their favourite music tracks. Playlist Management, Music Library, Audio Controls, Progress Bar, Shuffle and 
+                            Repeat, Responsive Design.</p>
+                        <a href="https://github.com/DoddakulaRaja/Coding-Raja-Technologies-Internship/tree/main/Music%20Player"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h1>FOOD DONATION ANDROID APPLICATION</h1>
+                        <p>This is a food donation android application designed to reduce food 
+                            wastage by donating excess food to poor or needy peoples. This Food Donation App uses Amazon Web Services 
+                            (AWS) cloud deployment and JAVA Technology. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------------------Contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-share-from-square"></i></i>rajadoddakula@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9177522189</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/doddakularaja/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <!--<span id="msg">hello</span>--->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright O Raja. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
